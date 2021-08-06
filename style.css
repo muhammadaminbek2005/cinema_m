@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-
 }
 
 .head1 {
@@ -41,7 +40,7 @@
     bottom: -550;
     right: 100px;
     border-radius: 10px;
-   
+
 }
 
 
@@ -57,15 +56,13 @@
     display: flex;
 }
 
-#footer {
-    background: #A3CC40;
-}
+
 
 .menu a {
     color: white;
 }
 
-ul {
+.menu ul {
     list-style: none;
     display: flex;
     width: 650px;
@@ -84,7 +81,7 @@ ul {
 
 #table tr:nth-child(even) {
     font-size: 14px;
-    background-color: #373737;
+    background-color: #6c6c6c;
 }
 
 #table tr:nth-child(even):hover {
@@ -99,9 +96,10 @@ ul {
 
 #table tr:nth-child(odd):hover {
     background-color: rgba(0, 0, 0, 0.65);
-    
+
 }
-#table tr{
+
+#table tr {
     height: 50px;
 }
 
@@ -110,11 +108,12 @@ ul {
     font-size: 20px;
     font-weight: 600;
     background-color: #A3CC40;
-   
+    text-align: start;
 }
+
 .checktable {
-    text-align: center;
     width: 80px;
+    text-align: center;
 }
 
 .table_text {
@@ -227,22 +226,26 @@ ul {
     justify-content: flex-start;
     margin-top: 46px;
 }
-.filmbox{
+
+.filmbox {
     display: flex;
 
-    
+
 }
-.film__item{
+
+.film__item {
     width: 33.333%;
     overflow: hidden;
     position: relative;
 
 }
+
 .film__item img {
     width: 100%;
     height: 100%;
 }
-.film_black{
+
+.film_black {
     width: 100%;
     height: 101%;
     background: rgba(22, 22, 22, 0.8);
@@ -250,7 +253,8 @@ ul {
     top: 0;
     left: 0;
 }
-.filmcontent{
+
+.filmcontent {
     position: absolute;
     top: 0;
     left: 0;
@@ -259,14 +263,44 @@ ul {
     line-height: 25px;
     display: none;
 }
-.filmcontent h3{
+
+.filmcontent h3 {
     font-size: 29px;
     margin-bottom: 20px;
 }
-.film__item:hover .filmcontent{
+
+.film__item:hover .filmcontent {
     display: block;
 
 }
-.film__item:hover .film_black{
+
+.film__item:hover .film_black {
     background: rgba(144, 210, 61, 0.4);
+}
+
+#footer {
+    background: #A3CC40;
+    width: 100%;
+    height: 362px;
+}
+
+.footer_menu {
+    display: inline-block;
+    text-align: center;
+
+}
+
+.footer_menu li {
+    list-style: none;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.footer_menu ul {
+    margin: 100px 30px 30px 20px;
+}
+
+.footer_menu p {
+    text-align: center;
+    padding: 150px;
 }
