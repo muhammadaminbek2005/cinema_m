@@ -41,7 +41,9 @@
 body {
     font-family: 'IBM-Plex-Sans';
 }
-
+h1{
+  color: #A3CC40; 
+}
 .h1 {
     color: white;
     font-weight: 100;
