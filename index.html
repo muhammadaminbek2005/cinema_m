@@ -15,7 +15,7 @@
         <div class="contenier-h">
             <div class="head1">
                 <div>
-                    <a href="https://innopolis.university/"><img src="logo.png" alt="innopolis Univercity"></a>
+                    <a href="https://innopolis.university/"><img src="/img/logo.png" alt="innopolis Univercity"></a>
                 </div>
                 <nav class="menu">
                     <ul>
@@ -92,7 +92,7 @@
 
                     <div>
                         <div class="m1">
-                            <img src="m1.png" alt="Большие экраны">
+                            <img src="/img/m1.png" alt="Большие экраны">
                         </div>
                         <div class="box1">
                             <h3>Большие экраны</h3>
@@ -106,7 +106,7 @@
 
                     <div>
                         <div class="m1">
-                            <img src="m2.png" alt="Объёмный звук">
+                            <img src="/img/m2.png" alt="Объёмный звук">
                         </div>
                         <div class="box1">
                             <br>
@@ -120,7 +120,7 @@
 
                     <div>
                         <div class="m1">
-                            <img src="m3.png" alt="Удобные кресла">
+                            <img src="/img/m3.png" alt="Удобные кресла">
                         </div>
                         <div class="box1">
                             <h3>Удобные кресла</h3>
@@ -137,7 +137,7 @@
 
                     <div>
                         <div class="m1">
-                            <img src="m4.png" alt="Уютная атмосфера">
+                            <img src="/img/m4.png" alt="Уютная атмосфера">
                         </div>
                         <div class="box1">
                             <h3>Уютная атмосфера</h3>
@@ -151,7 +151,7 @@
 
                     <div>
                         <div class="m1">
-                            <img src="m5.png" alt="Полное погружение">
+                            <img src="/img/m5.png" alt="Полное погружение">
                         </div>
                         <div class="box1">
                             <h3>Полное погружение</h3>
@@ -165,7 +165,7 @@
 
                     <div>
                         <div class="m1">
-                            <img src="m6.png" alt="Поцелуи на заднем ряду">
+                            <img src="/img/m6.png" alt="Поцелуи на заднем ряду">
                         </div>
                         <div class="box1">
                             <h3>Поцелуи на заднем ряду</h3>
@@ -476,13 +476,14 @@
                 <div class="form">
 
                     <div class="img_bacg">
-                        <img src="Rectangle 48.png">
+                        <img src="/img/Rectangle 48.png">
                     </div>
-                    <form class="party_form" action="/order">
+                    <form class="party_form" action="/order.php">
                         <div class="tx-form">
                             <p>Обратная связь</p>
                         </div>
                         <input class="fullname" type="text" required placeholder="Полное имя">
+                        <input class="fullname" type="email" required placeholder="email">
                         <select class="option_form" required>
                             <option value="" selected disabled>Номер места</option>
                             <option value="Номер места">1-10 LUX</option>
@@ -496,9 +497,11 @@
                             <option value="Номер места">81-90 Balcon</option>
                             <option value="Номер места">91-100 Balcon</option>
                         </select>
+                       
                         <input class="fullname2" type="text" required placeholder="Напишите свой отзыв">
-                        <input class="chekbox1" type="checkbox" name="" id="mmm">
-                        <label for="mmm">Я согласен на обработку своих персональных данных</label>
+                        <input class="chekbox1" type="checkbox" id="mmm">
+                        <label for="mmm">Я согласен на обработку своих персональных данных</label><br>
+                        <input type="file">
                         <div class="button"> <input class="bt1" type="submit" value="Заказать"></div>
 
                         <!-- <button type="submit">Заказать</button> -->
