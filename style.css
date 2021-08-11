@@ -129,10 +129,7 @@ h1 {
 .boxs {
     display: flex;
     justify-content: space-evenly;
-
 }
-
-
 
 .menu a {
     color: white;
@@ -205,7 +202,6 @@ h1 {
     border-radius: 20px;
     display: flex;
     box-shadow: 8px 9px 39px rgba(185, 185, 185, 0.37);
-
 }
 
 .img_bacg {
@@ -215,7 +211,6 @@ h1 {
     left: 174px;
     top: 5374px;
     border-radius: 20px;
-
 }
 
 .form img {
