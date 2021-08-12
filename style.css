@@ -11,35 +11,35 @@
 }
 
 @font-face {
-    font-family: ' IBM-Plex-Sans';
+    font-family: ' IBM-Plex-Sans-Thin';
     src: url(fonts/IBMPlexSans-Thin.ttf);
     font-style: normal;
     font-weight: 100;
 }
 
 @font-face {
-    font-family: 'IBM-Plex-Sans';
+    font-family: 'IBM-Plex-Sans-Regular';
     src: url(fonts/IBMPlexSans-Regular.ttf);
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face {
-    font-family: 'IBM-Plex-Sans';
+    font-family: 'IBM-Plex-Sans-SemiBold';
     src: url(fonts/IBMPlexSans-SemiBold.ttf);
     font-style: normal;
     font-weight: 600;
 }
 
 @font-face {
-    font-family: 'IBM-Plex-Sans';
+    font-family: 'IBM-Plex-Sans-Medium';
     src: url(fonts/IBMPlexSans-Medium.ttf);
     font-style: normal;
     font-weight: 500;
 }
 
 @font-face {
-    font-family: 'IBM-Plex-Sans';
+    font-family: 'IBM-Plex-Sans-Light';
     src: url(fonts/IBMPlexSans-Light.ttf);
     font-style: normal;
     font-weight: 200;
@@ -47,33 +47,56 @@
 
 body {
     font-family: 'IBM-Plex-Sans';
+    font-family: 'IBM-Plex-Sans-Medium';
+    font-family: 'IBM-Plex-Sans-Light';
+    font-family: 'IBM-Plex-Sans-SemiBold';
+    font-family: 'IBM-Plex-Sans-Regular';
+    font-family: ' IBM-Plex-Sans-Thin';
 }
 
 h1 {
+    font-family: 'IBM-Plex-Sans-Medium';
     color: #A3CC40;
     font-weight: 500;
     font-size: 48px;
-    margin: auto;
+    margin: 25px;
 }
 
 .h1 {
     color: white;
     font-weight: 100;
-    font-size: 68px;
+    font-size: 125px;
     line-height: 88px;
     padding-top: 170px;
+    font-family: ' IBM-Plex-Sans-Thin';
 }
 
 .welcome {
     font-weight: 400;
-    font-size: 41px;
+    font-size: 58px;
     color: #fff;
-    line-height: 53px;
     padding-top: 19px;
+    font-family: 'IBM-Plex-Sans-Regular';
 }
 
 .head1 {
     display: flex;
+}
+
+.menu__option {
+    margin: 0px 0px 0px 623px;
+}
+
+.menu__option__style {
+    padding: 10px 10px;
+    background: none;
+    border-radius: 1px;
+    border: none;
+    color: #fff;
+}
+
+.menu__option__style:hover {
+    color: black;
 }
 
 .head2 {
