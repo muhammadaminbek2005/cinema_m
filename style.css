@@ -71,7 +71,7 @@ h1 {
     font-size: 125px;
     line-height: 88px;
     padding-top: 170px;
-    font-family: ' IBM-Plex-Sansww';
+    font-family: ' IBM-Plex-Sans';
 }
 
 .welcome {
@@ -180,13 +180,23 @@ h1 {
     margin-bottom: 30px;
     color: white;
 }
-
-.table__color__{
-    background-color:#373737  ;
+#table tr:nth-child(even) {
+    font-size: 14px;
+    background-color: #6c6c6c;
 }
 
-.table__color{
-    background-color:#6c6c6c ;
+#table tr:nth-child(even):hover {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+#table tr:nth-child(odd) {
+    font-size: 14px;
+    background-color: #373737;
+}
+
+#table tr:nth-child(odd):hover {
+    background-color: rgba(0, 0, 0, 0.65);
+
 }
 
 #table tr {
