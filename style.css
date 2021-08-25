@@ -101,9 +101,13 @@ h1 {
 .menu__option__style:hover {
     color: black;
 }
+
 .menu__navigation{
-    
    padding: 15px; 
+}
+
+.menu__navigation a{
+    text-decoration: none;
 }
 .head2 {
     background: url(../cinema_m/img/Backgroound.png) no-repeat center/cover;
