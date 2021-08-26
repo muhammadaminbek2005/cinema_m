@@ -120,20 +120,22 @@
     row-reverse;
 }
 
-.mountain{
+.sky::before{
+    content: '';
     position:absolute;
     width:0px;
     height:1px;
     padding-top:-90px;
-    margin-bottom:40px;
-    margin-left:40px;
-    border-bottom:100px solid #FE5F55;
-    border-left: 100px solid transparent;
-    border-right: 105px solid transparent;
+    margin-bottom:-2px;
+    margin-left:-8px;
+    border-bottom:150px solid #FE5F55;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
     display:flex;
 }
 
-.mountain__2{
+.sky::after{
+    content: '';
     position:absolute;
     width:0;
     height:0;
@@ -142,11 +144,4 @@
     border-right: 100px solid transparent;
     margin-bottom:-29px;
     margin-left:-70px;
-}
-
-.mountain__bottom{
-    background: #FE5F55;
-    width:190px;
-    height:50px;
-    margin-top:50px;
 }

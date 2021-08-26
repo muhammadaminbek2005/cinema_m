@@ -184,6 +184,7 @@ h1 {
     margin-bottom: 30px;
     color: white;
 }
+
 #table tr:nth-child(even) {
     font-size: 14px;
     background-color: #6c6c6c;
@@ -213,6 +214,10 @@ h1 {
     font-weight: 600;
     background-color: #A3CC40;
     text-align: start;
+}
+#table td
+{
+    vertical-align:top ;
 }
 
 .checktable {
