@@ -6,7 +6,7 @@ header {
     position: relative;
 }
 
-.logo {
+.header__logo {
     margin: 50px 0 0 0;
 }
 
@@ -36,16 +36,16 @@ header {
     transition: 0.2s;
 }
 
-.undefined__flex {
+.header{
     display: flex;
     justify-content: space-between;
 }
 
-.contact {
+.header__menu-contact {
     margin-bottom: 15px;
 }
 
-.contact>a {
+.header__menu-contact>a {
     margin: 0 50px 0 0;
     font-family: 'IBM Plex Sans';
     font-style: normal;
@@ -55,11 +55,11 @@ header {
     color: #FFFFFF;
 }
 
-.navigation a {
+.header__navigation a {
     margin: 0 50px 0 0;
 }
 
-.navigation span {
+.header__navigation span {
     font-family: 'IBM Plex Sans';
     font-style: normal;
     font-weight: 500;
@@ -70,7 +70,7 @@ header {
     width: 111px;
 }
 
-.navigation span:hover {
+.header__navigation span:hover {
     text-transform: uppercase;
     color: #A3CC40;
     transition: 0.7s;
@@ -284,4 +284,100 @@ header {
     text-align: center;
 }
 
+/* !advertising */
+.advertising {
+    background: url(../img/Group\ 1.png) no-repeat center/cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
 
+.advertising::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-top: 109px solid #fff;
+    border-right: 100vw solid transparent;
+}
+
+
+.advertising::after {
+    content: '';
+    position: absolute;
+    top: 491px;
+    right: 0px;
+    border-bottom: 110px solid #fff;
+    border-left: 100vw solid transparent;
+}
+   
+.advertising__img {
+    position: absolute;
+    left: 140px;
+    top: -42px;
+    border-radius: 100%;
+}
+
+.advertising__text {
+    width: 548px;
+    box-sizing: border-box;
+    margin: 0px 441px 0;
+    padding: 116px 0;
+}
+
+.advertising__text h4 {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 62px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.advertising__text p {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: right;
+    color: #FFFFFF;
+    padding: 38px 0;
+}
+
+.advertising__button {
+    border: 1px solid limegreen;
+}
+
+/* !films */
+.block {
+    overflow: hidden;
+}
+.block__item {
+    float: left;
+    width: 33.33px;
+    position: relative;
+}
+.block__img {
+}
+.block__shadow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .4);
+}
+.block__descr {
+    background:  rgba(144, 210, 61, 0.4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+.block__title {
+}
+.block__text {
+}
