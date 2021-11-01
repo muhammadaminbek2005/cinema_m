@@ -1,9 +1,21 @@
-.contenier {
-    max-width: 1124px;
+.container {
     padding: 0 15px;
     margin: 0 auto;
+    max-width: 1124px;
+    box-sizing: border-box;
 }
+/* !for mobile devices */
+@media(max-width:767px) {
 
+}
+/* !For tablet divices */
+@media(min-width:768px) and (max-width:1023px){
+
+}
+/* destop */
+@media(min-width:1024px) {
+    
+}
 .text {
     font-family: 'IBM Plex Sans';
     font-style: normal;
@@ -28,7 +40,7 @@
     font-weight: normal;
     font-size: 11px;
     line-height: 14px;
-    text-align: center;
+    /* text-align: center; */
     color: #333333;
 }
 
