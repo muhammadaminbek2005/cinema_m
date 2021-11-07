@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="./fonts/stylesheet.css">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./css/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owlcarousel/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="./js/owl.carousel.min.js" defer></script>
+    <script src="./js/script.js" defer></script>
     <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
     <title>Innopolis University Cinema</title>
 </head>
@@ -21,6 +27,9 @@
                     <img src="/svg/Logo Innopolis University.svg" title="Innopolis University">
                 </a>
             </div>
+            <!-- <div class="header__burger">
+                <span></span>
+            </div> -->
             <div class="header__menu">
                 <div class="header__menu-contact">
                     <a href="tel:+78003551256">+7 (800) 355 12-56</a>
@@ -70,7 +79,7 @@
                 Всем покупателям подарок!
             </h2>
         </div>
-        <article class="welcome">
+        <!-- <article class="welcome">
             <h3 class="welcome__title">Добро пожаловать!</h3>
             <p class="welcome__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -81,57 +90,63 @@
                 fugiat nulla
                 pariatur. Excepteur sint occaecat cupidatat non proident, sunt.
             </p>
-        </article>
+        </article> -->
     </header>
     <main>
-        <section id="1" class="container">
+        <section id="1" class="container" style="max-width: 960px;">
             <strong class="wy__use strong">Почему мы?</strong>
             <div class="comfort-flex">
                 <div class="comfort">
                     <img class="comfort__img" src="img/m1.png" alt="Большие экраны">
                     <h4 class="text-h4">Большие экраны</h4>
-                    <p class="text-p comfort__text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    <p class="text-p comfort__text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                     </p>
                 </div>
                 <div class="comfort">
                     <img class="comfort__img" src="img/m2.png" alt="Объёмный звук">
                     <h4 class="text-h4">Объёмный звук</h4>
-                    <p class="text-p comfort__text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    <p class="text-p comfort__text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                     </p>
                 </div>
                 <div class="comfort">
                     <img class="comfort__img" src="img/m3.png" alt="Удобные кресла">
                     <h4 class="comfort__text-h4 text-h4">Удобные кресла</h4>
-                    <p class="comfort__text-p text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    <p class="comfort__text-p text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                     </p>
                 </div>
                 <div class="comfort">
                     <img class="comfort__img" src="img/m4.png" alt="Уютная атмосфера">
                     <h4 class="text-h4">Уютная атмосфера</h4>
-                    <p class="text-p comfort__text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    <p class="text-p comfort__text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                     </p>
                 </div>
                 <div class="comfort">
                     <img class="comfort__img" src="img/m5.png" alt="Полное погружение">
                     <h4 class="text-h4">Полное погружение</h4>
-                    <p class="text-p comfort__text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    <p class="text-p comfort__text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                     </p>
                 </div>
                 <div class="comfort">
                     <img class="comfort__img" src="img/m6.png" alt="Поцелуи на заднем ряду">
                     <h4 class="text-h4">Поцелуи на заднем ряду</h4>
-                    <p class="text-p comfort__text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    <p class="text-p comfort__text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                     </p>
                 </div>
             </div>
         </section>
-        <section id="film" class="container">
+        <section id="film" class="container" style="max-width: 960px;">
             <strong class="film-choose strong">Выберите фильм</strong>
             <table id="table">
                 <thead>
@@ -222,25 +237,26 @@
 
         <article>
             <div class="advertising">
-                <img class="advertising__img" src="img/advars.png" alt="present">
-                <div class="advertising__text container">
-                    <h4>Подарок каждому!</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam
-                        elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas. <br><br>
-                        Nunc vel risus commodo viverra maecenas accumsan. Morbi enim nunc faucibus a. Mauris commodo
-                        quis imperdiet massa.Sed elementum tempus egestas sed sed risus pretium quam vulputate. Aliquam
-                        vestibulum morbi blandit cursus risus at ultrices mi tempus. <br><br>
-                        Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut
-                        pharetra sit amet aliquam id diam maecenas. Sed elementum tempus egestas sed sed risus pretium
-                        quam vulputate. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Facilisi
-                        cras fermentum odio eu feugiat pretium nibh. Eu nisl nunc mi ipsum. Nibh sit amet commodo nulla
-                        facilisi nullam vehicula ipsum.
-                    </p>
-                    <button class="advertising__button">
-                        Получить подарок
-                    </button>
+                <div class="container">
+                    <img class="advertising__img" src="img/advars.png" alt="present">
+                    <div class="advertising__text container">
+                        <h4>Подарок каждому!</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam
+                            elementum pulvinar etiam non quam pharetra sit amet aliquam id diam maecenas. <br><br>Nunc
+                            vel risus commodo viverra maecenas accumsan. Morbi enim nunc faucibus a. Mauris commodo quis
+                            imperdiet massa.Sed elementum tempus egestas sed sed risus pretium quam vulputate. Aliquam
+                            vestibulum morbi blandit cursus risus at ultrices mi tempus. <br><br>Nibh mauris cursus
+                            mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit
+                            amet aliquam id diam maecenas. Sed elementum tempus egestas sed sed risus pretium quam
+                            vulputate. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Facilisi
+                            cras fermentum odio eu feugiat pretium nibh. Eu nisl nunc mi ipsum. Nibh sit amet commodo
+                            nulla facilisi nullam vehicula ipsum.
+                        </p>
+                        <button class="advertising__button">
+                            <span>Получить подарок</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </article>
@@ -249,10 +265,8 @@
                 <div class="film__box">
                     <h2 class="cinema__heading">Фильмы</h2>
                     <p class="section__commit">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore
-                        et dolore <br> magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum
-                        pulvinar
-                        etiam non quam.
+                        tempor incididunt ut labore et dolore <br> magna aliqua. Nibh mauris cursus mattis molestie a
+                        iaculis at. Vel quam elementum pulvinar etiam non quam.
                     </p>
                     <table class="cinema__table">
                         <tr class="film__cards">
@@ -304,7 +318,8 @@
                                             sed
                                             do
                                             eiusmod
-                                            tempor incididunt ut labore et dolore magnaaliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementumpulvinar
+                                            tempor incididunt ut labore et dolore magnaaliqua. Nibh mauris cursus mattis
+                                            molestie a iaculis at. Vel quam elementumpulvinar
                                             etiam non quam. Ut pharetra sit
                                             amet aliquam id diam maecenas.</p>
                                     </div>
@@ -364,67 +379,67 @@
                                             etiam non quam. Ut pharetra sit
                                             amet aliquam id diam maecenas.</p>
                                     </div>
-                                </a></td>
-                            </tr><tr class="film__cards">
-                                <td>
-                                    <a href="https://www.kinopoisk.ru/film/447301/" class="film__img"
-                                        title="кинопоиск / Начало" target="_blank">
-                                        <img src="img/007.png" alt="Начало">
-                                        <div class="film__p">
-                                            <h2 class="cinema__title">Начало</h2>
-                                            <p class="cinema__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                                sed
-                                                do
-                                                eiusmod
-                                                tempor incididunt ut labore et dolore magna
-                                                aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum
-                                                pulvinar
-                                                etiam non quam. Ut pharetra sit
-                                                amet aliquam id diam maecenas.</p>
-                                        </div>
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="https://www.kinopoisk.ru/film/939981/" class="film__img"
-                                        title="кинопоиск / Лунный свет" target="_blank">
-                                        <img src="img/008.png" alt="Лунный свет">
-                                        <div class="film__p">
-                                            <h2 class="cinema__title">Лунный свет</h2>
-                                            <p class="cinema__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                                sed
-                                                do
-                                                eiusmod
-                                                tempor incididunt ut labore et dolore magna
-                                                aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum
-                                                pulvinar
-                                                etiam non quam. Ut pharetra sit
-                                                amet aliquam id diam maecenas.</p>
-                                        </div>
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="https://www.kinopoisk.ru/film/966995/" class="film__img"
-                                        title="кинопоиск / Живое" target="_blank">
-                                        <img src="img/009.png" alt="Живое">
-                                        <div class="film__p">
-                                            <h2 class="cinema__title">Живое</h2>
-                                            <p class="cinema__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                                sed
-                                                do
-                                                eiusmod
-                                                tempor incididunt ut labore et dolore magna
-                                                aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum
-                                                pulvinar
-                                                etiam non quam. Ut pharetra sit
-                                                amet aliquam id diam maecenas.</p>
-                                        </div>
-                                    </a>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="film__cards">
+                            <td>
+                                <a href="https://www.kinopoisk.ru/film/447301/" class="film__img"
+                                    title="кинопоиск / Начало" target="_blank">
+                                    <img src="img/007.png" alt="Начало">
+                                    <div class="film__p">
+                                        <h2 class="cinema__title">Начало</h2>
+                                        <p class="cinema__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed
+                                            do
+                                            eiusmod
+                                            tempor incididunt ut labore et dolore magna
+                                            aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum
+                                            pulvinar
+                                            etiam non quam. Ut pharetra sit
+                                            amet aliquam id diam maecenas.</p>
+                                    </div>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="https://www.kinopoisk.ru/film/939981/" class="film__img"
+                                    title="кинопоиск / Лунный свет" target="_blank">
+                                    <img src="img/008.png" alt="Лунный свет">
+                                    <div class="film__p">
+                                        <h2 class="cinema__title">Лунный свет</h2>
+                                        <p class="cinema__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed
+                                            do
+                                            eiusmod
+                                            tempor incididunt ut labore et dolore magna
+                                            aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum
+                                            pulvinar
+                                            etiam non quam. Ut pharetra sit
+                                            amet aliquam id diam maecenas.</p>
+                                    </div>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="https://www.kinopoisk.ru/film/966995/" class="film__img"
+                                    title="кинопоиск / Живое" target="_blank">
+                                    <img src="img/009.png" alt="Живое">
+                                    <div class="film__p">
+                                        <h2 class="cinema__title">Живое</h2>
+                                        <p class="cinema__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed
+                                            do
+                                            eiusmod
+                                            tempor incididunt ut labore et dolore magna
+                                            aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum
+                                            pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas.</p>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
-            </section>
+            </div>
+        </section>
         <section>
             <div class="container">
                 <h2 class="strong goods">Товары</h2>
@@ -440,24 +455,24 @@
                     quam.</div>
                 <div class="card__box">
                     <div class="card">
-                        <img src="img/c8fd26f982-2 2.png" alt="" class="card__img">
+                        <img class="card__img" src="img/Coca-cola.png" alt="Coca-cola">
                         <div class="card__hover">
-                            <p>Coca-cola</p>
+                            <div class="card__hover-bacground"></div>
+                            <p class="card__hover-text">Coca-cola</p>
                         </div>
                     </div>
-                    <div class="card__two">
-                        <img src="img/HTB1uSiFXOfrK1RjSspbq6A4pFXao 1.png" alt="" class="card__img">
+                    <div class="card">
+                        <img class="card__img" src="img/Coca-cola2.png" alt="Брелок Железный человек">
                         <div class="card__hover">
-                            <p>Брелок
-                                “Железный человек”</p>
+                            <div class="card__hover-bacground"></div>
+                            <p class="card__hover-text">Брелок “Железный человек”</p>
                         </div>
                     </div>
-                    <div class="card__three">
-                        <img src="img/goods.png" alt="" class="card__img">
+                    <div class="card">
+                        <img class="card__img" src="img/Coca-cola3.png" alt="Постер Мстители">
                         <div class="card__hover">
-                            <p>Постер
-                                “Мстители”
-                            </p>
+                            <div class="card__hover-bacground"></div>
+                            <p class="card__hover-text">Постеp “Мстители”</p>
                         </div>
                     </div>
                 </div>
@@ -465,7 +480,7 @@
         </section>
         <section>
             <div id="reviews">
-                <div class="container">
+                <div class="container" style="max-width: 960px;">
                     <h2 class="reviews__heading">Отзывы</h2>
                     <div class="reviews__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -475,40 +490,31 @@
                         pulvinar
                         etiam non quam
                     </div>
-                    <div class="section__photo">
-                        <div class="photo">
+                    <div class="owl-carousel">
+                        <span class="owl-nav"></span>
+                        <div class="description">
                             <img class="customers" src="img/1n.png" alt="">
                             <h4>Елена Еленова</h4>
                             <br>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt
-                                ut
-                                labore 
-                                et dolore magna aliqua.</p>
-                            <div class="section__photo__text">13.12.2020</div>
-                        </div>
-                        <div class="photo__middle">
-                            <img class="customers__1mg" src="img/2n.png" alt="">
-                            <h4>Борис Борисов</h4>
-                            <br>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt
-                                ut
-                                labore
-                                et dolore magna aliqua.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
                             <div class="section__photo-text">13.12.2020</div>
                         </div>
-                        <div class="photo">
-                            <img class="customers" src="img/3n.png" alt="">
-                            <h4>Леонардо ДиКаприо</h4>
+                        <div class="description">
+                            <img class="customers" src="img/2n.png" alt="">
+                            <h4>Елена Еленова</h4>
                             <br>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt
-                                ut
-                                labore
-                                et dolore magna aliqua.
-                            </p>
-                            <div class="section__photo__text">13.12.2020</div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
+                            <div class="section__photo-text">13.12.2020</div>
+                        </div>
+                        <div class="description">
+                            <img class="customers" src="img/3n.png" alt="">
+                            <h4>Елена Еленова</h4>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
+                            <div class="section__photo-text">13.12.2020</div>
                         </div>
                     </div>
                 </div>
@@ -519,13 +525,13 @@
             <div class="img__bacg">
                 <img src="img/Rectangle 48.png">
             </div>
-            <form class="party_form" action="/order.php" enctype="multipart/form-data" method="post">
+            <form class="party__form" action="/order.php" enctype="multipart/form-data" method="post">
                 <div class="tx-form">
                     <p>Обратная связь</p>
                 </div>
                 <input class="fullname" type="text" required placeholder="Полное имя">
                 <input class="fullname" type="email" required placeholder="email">
-                <select class="option_form" required>
+                <select class="option__form" required>
                     <option value="" selected disabled>Номер места</option>
                     <option value="Номер места">1-10 LUX</option>
                     <option value="Номер местa">11-20 LUX</option>
@@ -549,19 +555,19 @@
             <!-- <input class="bt1" type="submit" value="Заказать">
          <button type="submit">Заказать</button> -->
         </section>
-        <article class="map">
+        <article class="map container">
             <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28622.312866744378!2d69.31514336914886!3d41.056968093293364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae412648862c25%3A0xb31a3e0339f798c8!2z0KLQvtC50YLQtdC_0LAsINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1628081875730!5m2!1sru!2s"
-            width="100%" height="421px" style="border:7px solid #A3CC40 ;border-radius: 10px;" allowfullscreen=""
-            loading="lazy">
-        </iframe>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28622.312866744378!2d69.31514336914886!3d41.056968093293364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae412648862c25%3A0xb31a3e0339f798c8!2z0KLQvtC50YLQtdC_0LAsINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1628081875730!5m2!1sru!2s"
+                width="100%" height="421px" style="border:7px solid #A3CC40 ;border-radius: 10px;" allowfullscreen=""
+                loading="lazy">
+            </iframe>
         </article>
         <footer class="footer">
             <div class="container">
                 <div class="footer__contact">
                     <div>
                         <a href="http://university.innopolis.ru">
-                            <img class="innopolis__logo" src="/img/Logo Innopolis University (2).png" alt="">
+                            <img class="innopolis__logo" src="./svg/Logo Innopolis University.svg" alt="">
                         </a>
                         <p class="text2">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod
                             tempor<br>
@@ -624,7 +630,8 @@
                     </ul>
                     <div id="contact">
                         <h3 class="contact">CONTACT</h3>
-                        <li class="contact__title"><a class="contact__link" href="tel:+78003551256">+7 (800) 355 12-56</a>
+                        <li class="contact__title"><a class="contact__link" href="tel:+78003551256">+7 (800) 355
+                                12-56</a>
                         </li>
                         <li class="contact__title"><a class="contact__link"
                                 href="mailto:kino@innopolis.ru">kino@innopolis.ru</a></li>
