@@ -1,21 +1,20 @@
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
-    autoHeight:true,
-    center: true,
-    items:2,
+    items:3,
     loop: true,
-    margin: 10,
+    center:true,
     nav: true,
-    responsive: {
-      0: {
-        items: 1 ,
-      },
-      600: {
-        items: 2,
-      },
-      1000: {
-        items: 3,
-      },
-    },
+    dots:false,
   });
 });
+
+const navbor = () => {
+  const burger = document.querySelector('.header__burger');
+  const nav = document.querySelector('.header__menu');
+  const navLinks = document.querySelectorAll(".header__menu div")
+  // togle
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("nav-active")
+  })
+}
+navbor ();

@@ -5,24 +5,13 @@
     box-sizing: border-box;
     position: relative;
 }
-/* !for mobile devices */
-@media(max-width:767px) {
- 
-}
-/* !For tablet divices */
-@media(min-width:768px) and (max-width:1023px){
 
-}
-/* destop */
-@media(min-width:1024px) {
-    
-}
 .text {
     font-family: 'IBM Plex Sans';
     font-style: normal;
     font-weight: 500;
     font-size: 3rem;
-    line-height: 62px;
+    line-height:3.875rem;
     color: #A3CC40;
 }
 
@@ -31,7 +20,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 3rem;
-    line-height: 62px;
+    line-height:3.87rem;
     color: #A3CC40;
 }
 
@@ -40,7 +29,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 0.69rem;
-    line-height: 14px;
+    line-height:0.875rem;
     /* text-align: center; */
     color: #333333;
 }
@@ -50,7 +39,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 1.25rem;
-    line-height: 26px;
+    line-height:1.625rem;
     text-align: center;
     color: #333333;
 }

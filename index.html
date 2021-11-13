@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./fonts/stylesheet.css">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/style.css">
-
+    <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owlcarousel/owl.theme.default.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
@@ -27,10 +27,18 @@
                     <img src="/svg/Logo Innopolis University.svg" title="Innopolis University">
                 </a>
             </div>
-            <!-- <div class="header__burger">
-                <span></span>
-            </div> -->
+
             <div class="header__menu">
+                <div class="header__close">
+                    <svg width="27" height="27" viewbox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.38838 27C1.03272 27 0.677068 26.8647 0.406851 26.5925C-0.135617 26.05 -0.135617 25.1705 0.406851 24.6281L24.6281 0.406851C25.1705 -0.135617 26.05 -0.135617 26.5925 0.406851C27.1349 0.949319 27.1349 1.8288 26.5925 2.3716L2.3716 26.5925C2.09935 26.863 1.7437 27 1.38838 27V27Z"
+                            fill="#A3CC40" />
+                        <path
+                            d="M25.6113 27C25.2556 27 24.9003 26.8647 24.6298 26.5925L0.406851 2.3716C-0.135617 1.8288 -0.135617 0.949319 0.406851 0.406851C0.94932 -0.135617 1.8288 -0.135617 2.3716 0.406851L26.5925 24.6281C27.1349 25.1705 27.1349 26.05 26.5925 26.5925C26.3202 26.863 25.9649 27 25.6113 27Z"
+                            fill="#A3CC40" />
+                    </svg>
+                </div>
                 <div class="header__menu-contact">
                     <a href="tel:+78003551256">+7 (800) 355 12-56</a>
                     <a href="mailto:kino@innopolis.ru">kino@innopolis.ru</a>
@@ -43,33 +51,38 @@
                         </svg>
                         <span class="call">Заказать звонок</span>
                     </a>
+                    <select class="option" name="ru">
+                        <option value="ru">RU</option>
+                        <option value="uz">UZB</option>
+                        <option value="en">ENG</option>
+                    </select>
                 </div>
                 <nav class="header__navigation">
-                    <a href="#1">
+                    <a href="#wyus">
                         <span>Почему мы?</span>
                     </a>
-                    <a href="#2">
+                    <a href="#film">
                         <span>Выберите фильм</span>
                     </a>
-                    <a href="#1">
-                        <span>Получить подарок</span>
-                    </a>
-                    <a href="">
+                    <a href="#cinema">
                         <span>Фильмы</span>
                     </a>
-                    <a href="">
+                    <a href="#goods">
                         <span>Товары</span>
                     </a>
-                    <a href="">
+                    <a href="#reviews">
                         <span>Отзывы</span>
                     </a>
                 </nav>
             </div>
-            <select class="option" name="ru">
-                <option value="ru">RU</option>
-                <option value="uz">UZB</option>
-                <option value="en">ENG</option>
-            </select>
+            <div class="header__burger">
+                <svg width="47" height="22" viewbox="0 0 47 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.0400391" width="46" height="3" fill="white" />
+                    <rect x="0.0400391" y="19" width="46" height="3" fill="white" />
+                    <rect x="0.0400391" y="9" width="46" height="3" fill="white" />
+                </svg>
+            </div>
+
         </div>
         <div class="box">
             <h1>
@@ -93,7 +106,7 @@
         </article> -->
     </header>
     <main>
-        <section id="1" class="container" style="max-width: 960px;">
+        <section id="wyus" class="container">
             <strong class="wy__use strong">Почему мы?</strong>
             <div class="comfort-flex">
                 <div class="comfort">
@@ -112,14 +125,16 @@
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                     </p>
                 </div>
-                <div class="comfort">
-                    <img class="comfort__img" src="img/m3.png" alt="Удобные кресла">
-                    <h4 class="comfort__text-h4 text-h4">Удобные кресла</h4>
-                    <p class="comfort__text-p text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                    </p>
-                </div>
+            <div class="comfort">
+                <img class="comfort__img" src="img/m3.png" alt="Удобные кресла">
+                <h4 class="comfort__text-h4 text-h4">Удобные кресла</h4>
+                <p class="comfort__text-p text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </div>
+        </div>
+            <div class="comfort-flex">
                 <div class="comfort">
                     <img class="comfort__img" src="img/m4.png" alt="Уютная атмосфера">
                     <h4 class="text-h4">Уютная атмосфера</h4>
@@ -146,7 +161,7 @@
                 </div>
             </div>
         </section>
-        <section id="film" class="container" style="max-width: 960px;">
+        <section id="film" class="container">
             <strong class="film-choose strong">Выберите фильм</strong>
             <table id="table">
                 <thead>
@@ -260,10 +275,10 @@
                 </div>
             </div>
         </article>
-        <section class="cinema">
+        <section id="cinema">
             <div class="container">
                 <div class="film__box">
-                    <h2 class="cinema__heading">Фильмы</h2>
+                    <h2 class="cinema__heading strong">Фильмы</h2>
                     <p class="section__commit">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore <br> magna aliqua. Nibh mauris cursus mattis molestie a
                         iaculis at. Vel quam elementum pulvinar etiam non quam.
@@ -440,9 +455,9 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="goods">
             <div class="container">
-                <h2 class="strong goods">Товары</h2>
+                <h2 class="goods strong">Товары</h2>
                 <div class="text-p goods__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod
                     tempor
@@ -478,45 +493,69 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div id="reviews">
-                <div class="container" style="max-width: 960px;">
-                    <h2 class="reviews__heading">Отзывы</h2>
-                    <div class="reviews__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et
-                        dolore<br> magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum
-                        pulvinar
-                        etiam non quam
-                    </div>
-                    <div class="owl-carousel">
-                        <span class="owl-nav"></span>
-                        <div class="description">
-                            <img class="customers" src="img/1n.png" alt="">
-                            <h4>Елена Еленова</h4>
-                            <br>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua.</p>
-                            <div class="section__photo-text">13.12.2020</div>
-                        </div>
-                        <div class="description">
-                            <img class="customers" src="img/2n.png" alt="">
-                            <h4>Елена Еленова</h4>
-                            <br>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua.</p>
-                            <div class="section__photo-text">13.12.2020</div>
-                        </div>
-                        <div class="description">
-                            <img class="customers" src="img/3n.png" alt="">
-                            <h4>Елена Еленова</h4>
-                            <br>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua.</p>
-                            <div class="section__photo-text">13.12.2020</div>
-                        </div>
-                    </div>
+        <section id="reviews">
+            <h2 class="reviews__heading strong">Отзывы</h2>
+            <div class="reviews__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore
+                et
+                dolore<br> magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum
+                pulvinar
+                etiam non quam
+            </div>
+            <div class="owl-carousel owl-theme">
+                <!-- <span class="owl-nav"></span> -->
+                <div class="description">
+                    <img class="customers" src="img/1n.png" alt="">
+                    <h4>Елена Еленова</h4>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.</p>
+                    <div class="section__photo-text">13.12.2020</div>
+                </div>
+                <div class="description">
+                    <img class="customers" src="img/2n.png" alt="">
+                    <h4>Елена Еленова</h4>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.</p>
+                    <div class="section__photo-text">13.12.2020</div>
+                </div>
+                <div class="description">
+                    <img class="customers" src="img/3n.png" alt="">
+                    <h4>Елена Еленова</h4>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.</p>
+                    <div class="section__photo-text">13.12.2020</div>
+                </div>
+                <div class="description">
+                    <img class="customers" src="img/3n.png" alt="">
+                    <h4>Елена Еленова</h4>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.</p>
+                    <div class="section__photo-text">13.12.2020</div>
+                </div>
+                <div class="description">
+                    <img class="customers" src="img/3n.png" alt="">
+                    <h4>Елена Еленова</h4>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.</p>
+                    <div class="section__photo-text">13.12.2020</div>
+                </div>
+                <div class="description">
+                    <img class="customers" src="img/3n.png" alt="">
+                    <h4>Елена Еленова</h4>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.</p>
+                    <div class="section__photo-text">13.12.2020</div>
+                </div>
+                <div class="owl-nav">
+                    <button class="owl-prev"></button>
+                    <button class="owl-next"></button>
                 </div>
             </div>
         </section>
