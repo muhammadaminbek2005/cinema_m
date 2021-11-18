@@ -5,6 +5,15 @@ $(document).ready(function () {
     center:true,
     nav: true,
     dots:false,
+    0: {
+      items: 1 ,
+    },
+    600: {
+      items: 2,
+    },
+    1000: {
+      items: 3,
+    },
   });
 });
 

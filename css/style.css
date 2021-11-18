@@ -60,8 +60,12 @@ body {
 
 
 /*! hader__burger */
-
-
+/* .header__close{
+    display: none;
+}
+.header__burger{
+    display: none;
+} */
 /* !header__burger end  */
 .header__menu-contact {
     margin-bottom: 0.9375rem;
