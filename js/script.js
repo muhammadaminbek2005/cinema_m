@@ -16,7 +16,7 @@ $(document).ready(function () {
     },
   });
 });
-
+// for burger
 const navbor = () => {
   const burger = document.querySelector('.header__burger');
   const Close = document.querySelector('.header__close');
@@ -31,4 +31,4 @@ const navbor = () => {
   })
 }
 navbor ();
-
+// for table
