@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./fonts/stylesheet.css">
     <link rel="stylesheet" href="./css/all.css">
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
     <script src="./js/owl.carousel.min.js" defer></script>
     <script src="./js/script.js" defer></script>
@@ -21,7 +22,7 @@
 
 <body>
     <header>
-        <div class="header container">
+        <div class="header">
             <div class="header__logo ">
                 <a href="http://innopolis.University" target="_blank" rel="noopener noreferrer">
                     <img src="/svg/Logo Innopolis University.svg" title="Innopolis University">
@@ -81,7 +82,7 @@
                     <rect x="0.0400391" y="19" width="46" height="3" fill="white" />
                     <rect x="0.0400391" y="9" width="46" height="3" fill="white" />
                 </svg>
-            </div> 
+            </div>
 
         </div>
         <div class="box">
@@ -92,7 +93,7 @@
                 Всем покупателям подарок!
             </h2>
         </div>
-        <!-- <article class="welcome">
+        <article class="welcome">
             <h3 class="welcome__title">Добро пожаловать!</h3>
             <p class="welcome__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -103,7 +104,7 @@
                 fugiat nulla
                 pariatur. Excepteur sint occaecat cupidatat non proident, sunt.
             </p>
-        </article> -->
+        </article>
     </header>
     <main>
         <section id="wyus" class="container">
@@ -161,38 +162,40 @@
         </section>
         <section id="film" class="container">
             <strong class="film-choose strong">Выберите фильм</strong>
-            <table id="table">
-                <thead>
-                    <tr>
-                        <th class="checktable"></th>
-                        <th>
-                            <span>
-                                Начало сеанса
-                            </span>
-                            <span>
-                                <svg width="9" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4.49182 0.5L8.49182 5H0.491821L4.49182 0.5Z" fill="white" />
-                                </svg>
-                            </span>
-                        </th>
-                        <th>
-                            <span>
-                                Название фильма
-                            </span>
-                            <span>
-                                <svg width="8" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4 4.5L8 0H0L4 4.5Z" fill="white" />
-                                </svg>
-                            </span>
-                        </th>
-                        <th>
-                            <p>Жанр</p>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody id="t_body">
-                </tbody>
-            </table>
+            <div class="film__scroll">
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th class="checktable"></th>
+                            <th>
+                                <span>
+                                    Начало сеанса
+                                </span>
+                                <span>
+                                    <svg width="9" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.49182 0.5L8.49182 5H0.491821L4.49182 0.5Z" fill="white" />
+                                    </svg>
+                                </span>
+                            </th>
+                            <th>
+                                <span>
+                                    Название фильма
+                                </span>
+                                <span>
+                                    <svg width="8" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 4.5L8 0H0L4 4.5Z" fill="white" />
+                                    </svg>
+                                </span>
+                            </th>
+                            <th>
+                                <p>Жанр</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="t_body">
+                    </tbody>
+                </table>
+            </div>
             <p class="film__table-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
             </p>
@@ -201,7 +204,8 @@
             <div class="advertising">
                 <div class="container">
                     <img class="advertising__img" src="img/advars.png" alt="present">
-                    <div class="advertising__text container">
+                    <br>
+                    <div class="advertising__text">
                         <h4>Подарок каждому!</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam
@@ -306,7 +310,7 @@
                                     </div>
                                 </a>
                             </td>
-                            <td>
+                            <td class="film__cards-center">
                                 <!-- <a href="https://www.kinopoisk.ru/film/1188248/" class="film__img"
                                     title="кинопоиск / Калашников" target="_blank">
                                     <img src="img/005.png" alt="Калашников">
@@ -439,47 +443,69 @@
             </div>
         </section>
         <section id="reviews">
-            <h2 class="reviews__heading strong">Отзывы</h2>
-            <div class="reviews__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore
-                et
-                dolore<br> magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum
-                pulvinar
-                etiam non quam
+            <div class="container">
+                <h2 class="reviews__heading strong">Отзывы</h2>
+                <div class="reviews__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et
+                    dolore<br> magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum
+                    pulvinar
+                    etiam non quam
+                </div>
+                <div class="owl-carousel owl-theme ">
+
+                    <div class="description">
+                        <img class="customers" src="img/1n.png" alt="">
+                        <h4>Елена Еленова</h4>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.</p>
+                        <div class="section__photo-text">13.12.2020</div>
+                    </div>
+                    <div class="description">
+                        <img class="customers" src="img/2n.png" alt="">
+                        <h4>Борис Борисов</h4>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.</p>
+                        <div class="section__photo-text">13.12.2020</div>
+                    </div>
+                    <div class="description">
+                        <img class="customers" src="img/3n.png" alt="">
+                        <h4>Леонардо ДиКаприо</h4>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.</p>
+                        <div class="section__photo-text">13.12.2020</div>
+                    </div>
+                    <div class="description">
+                        <img class="customers" src="img/1n.png" alt="">
+                        <h4>Елена Еленова</h4>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.</p>
+                        <div class="section__photo-text">13.12.2020</div>
+                    </div>
+                    <div class="description">
+                        <img class="customers" src="img/2n.png" alt="">
+                        <h4>Борис Борисов</h4>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.</p>
+                        <div class="section__photo-text">13.12.2020</div>
+                    </div>
+                    <div class="description">
+                        <img class="customers" src="img/3n.png" alt="">
+                        <h4>Леонардо ДиКаприо</h4>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.</p>
+                        <div class="section__photo-text">13.12.2020</div>
+                    </div>
+                </div>
+                <div class="owl-nav cloned"></div>
             </div>
-            <div class="owl-carousel owl-theme ">
-                
-                <div class="description">
-                    <img class="customers" src="img/1n.png" alt="">
-                    <h4>Елена Еленова</h4>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua.</p>
-                    <div class="section__photo-text">13.12.2020</div>
-                </div>
-                <div class="description">
-                    <img class="customers" src="img/2n.png" alt="">
-                    <h4>Елена Еленова</h4>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua.</p>
-                    <div class="section__photo-text">13.12.2020</div>
-                </div>
-                <div class="description">
-                    <img class="customers" src="img/3n.png" alt="">
-                    <h4>Елена Еленова</h4>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua.</p>
-                    <div class="section__photo-text">13.12.2020</div>
-                </div>
-                <div class="owl-nav ">
-                    <button type="button" role="presentation" class="owl-prev"></button>
-                    <button type="button" role="presentation" class="owl-prev"></button>
-                </div>
-            </div>
-           
         </section>
         <section class="form container">
 
@@ -507,8 +533,10 @@
                 </select>
 
                 <input class="fullname2" type="text" required placeholder="Напишите свой отзыв">
-                <input class="chekbox1" type="checkbox" id="mmm">
-                <label for="mmm">Обработка персональных данных</label><br>
+                <div> <input class="chekbox1" type="checkbox" id="mmm">
+                    <label for="mmm">Обработка персональных данных</label>
+                </div>
+                <br>
                 <p><input type="file" name="pic"></p>
                 <div class="button"> <input class="bt1" type="submit" value="Заказать"></div>
                 <!-- <button type="submit">Заказать</button> -->
@@ -577,9 +605,6 @@
                                 </svg>
                             </a>
                         </div>
-                        <p class="footer__text">
-                            Copyright @ 2020 Innopolis University . All Rights Reserved.
-                        </p>
                     </div>
                     <ul id="site">
                         <h3 class="site">SITE</h3>
@@ -602,6 +627,9 @@
                         <li class="contact__title"><a class="contact__link" href="#">Все контакты</a></li>
                     </div>
                 </div>
+                <p class="footer__text">
+                    Copyright @ 2020 Innopolis University . All Rights Reserved.
+                </p>
             </div>
         </footer>
     </main>

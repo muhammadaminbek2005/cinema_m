@@ -1,18 +1,29 @@
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
-    items: 3,
     loop: true,
     center: true,
     nav: true,
     dots: false,
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 2,
-    },
-    1000: {
-      items: 3,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true,
+      },
+      360: {
+        items: 2,
+        nav: false,
+        margin:100,
+      },
+      768: {
+        items: 2,
+        nav: true,
+        margin:10,
+      },
+      1024: {
+        items: 3,
+        nav: true,
+      },
     },
   });
 });
@@ -55,10 +66,9 @@ let films = [
   },
 ];
 
-let tableBody = document.getElementById('t_body');
+let tableBody = document.getElementById("t_body");
 
 for (i = 0; i < films.length; i++) {
-
   tableBody.innerHTML += `
 <tr class="table__color">
 <td class="checktable">
