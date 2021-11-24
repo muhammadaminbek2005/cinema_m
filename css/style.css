@@ -2,6 +2,17 @@ html {
     font-size: 1.42vw;
 }
 
+::-webkit-scrollbar {
+    width: 3px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0);
+    /* or add it to the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(163, 204, 64, 1);
+}
+
 header {
     background: url(/img/Backgrooundcinema.png) no-repeat center/cover;
     max-width: 100%;
@@ -14,10 +25,10 @@ header {
 header::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     right: 0;
-    border-bottom: 12.5rem solid #fff;
-    border-left: 100vw solid transparent;
+    border-bottom: 12rem solid #fff;
+    border-left: 105vw solid transparent;
 }
 
 body {
@@ -59,12 +70,14 @@ body {
 }
 
 /*! hader__burger */
-.header__close svg{
+.header__close svg {
     display: none;
 }
-.header__burger svg{
+
+.header__burger svg {
     display: none;
 }
+
 /* !header__burger end  */
 .header__menu-contact {
     margin-bottom: 1rem;
@@ -150,7 +163,7 @@ body {
 
 
 .box {
-    margin: 8rem 0 0 0;
+    margin: 8% 0 0 0;
 }
 
 .box>h1 {
@@ -171,7 +184,6 @@ body {
     line-height: 3.3125rem;
     text-align: center;
     color: #FFFFFF;
-    margin: 1.125rem 0 0 0;
 }
 
 /* !header end */
@@ -284,7 +296,7 @@ body {
 
 #table {
     margin: 5rem auto 2rem;
-    width: 849px;
+    width: 53rem;
     border-radius: 10px;
     border-collapse: collapse;
     overflow: hidden;
@@ -377,10 +389,10 @@ body {
 .advertising::after {
     content: '';
     position: absolute;
-    top: 35.6rem;
+    top: 35rem;
     right: 0;
-    border-bottom: 6.875rem solid #fff;
-    border-left: 100vw solid transparent;
+    border-bottom: 8rem solid #fff;
+    border-left: 110vw solid transparent;
 }
 
 .advertising__img {
@@ -778,7 +790,7 @@ body {
 .img__bacg {
     background: url(../img/relaxtime.png) no-repeat center/cover;
     max-width: 100%;
-    height:32.9rem;
+    height: 32.9rem;
     border-radius: 1.25rem;
 }
 
@@ -792,14 +804,12 @@ body {
     font-size: 1.5625rem;
     color: rgba(163, 204, 64, 1);
     text-align: center;
-    width: 22.0625rem;
-    margin-top: 2rem;
 }
 
 .party__form {
     display: flex;
     flex-direction: column;
-    padding:1rem;
+    padding: 1rem;
 }
 
 .fullname {
@@ -927,7 +937,7 @@ body {
 
 .map {
     padding: 0 5rem;
-    margin: 0 auto;
+    margin: -1rem auto;
     max-width: 100%;
     box-sizing: border-box;
 }
