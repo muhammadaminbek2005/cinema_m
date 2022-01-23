@@ -455,7 +455,39 @@ body {
     background-color: #fff;
     color: #A3CC40;
 }
-
+/* advertising form */
+.popup {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(51, 51, 51, 0.55);
+}
+.hidden{
+    display: none;
+}
+.popup__form {
+    position: relative;
+    background-color: #fff;
+    max-width: 500px;
+    min-height: 150px;
+    margin: 120px auto;
+    border-radius: 50px;
+}
+.popup__form-close {
+    position: absolute;
+    right: 22px;
+    top: 22px;
+}
+.popup__inputs {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+/* advertising form end*/
 /* !films */
 
 /* film */
@@ -927,7 +959,7 @@ body {
 
 .map {
     padding: 0 5rem;
-    margin: 0 auto;
+    margin: -30px auto;
     max-width: 100%;
     box-sizing: border-box;
 }

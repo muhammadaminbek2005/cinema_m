@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
-    <script src="./js/owl.carousel.min.js" defer></script>
-    <script src="./js/script.js" defer></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="./js/owl.carousel.min.js"></script>
+    <script defer src="./js/script.js"></script>
+    <script defer src="./js/table.js"></script>
+    <script defer src="./js/prize.js"></script>
     <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
     <title>Innopolis University Cinema</title>
 </head>
@@ -219,9 +221,25 @@
                             cras fermentum odio eu feugiat pretium nibh. Eu nisl nunc mi ipsum. Nibh sit amet commodo
                             nulla facilisi nullam vehicula ipsum.
                         </p>
-                        <button class="advertising__button">
+                        <button id="prize-open" class="advertising__button">
                             <span>Получить подарок</span>
                         </button>
+                        <div id="prize" class="popup hidden">
+                            <div class="popup__form">
+                                <div id="popup-close" class="popup__form-close">
+                                    <svg width="35" height="35" viewbox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="17.5" cy="17.5" r="17.5" fill="#A3CC40"/>
+                                        <path d="M25.5363 11.8271L23.9176 10.2084L17.5 16.626L11.0824 10.2084L9.46362 11.8271L15.8812 18.2447L9.46362 24.6623L11.0824 26.2811L17.5 19.8635L23.9176 26.2811L25.5363 24.6623L19.1187 18.2447L25.5363 11.8271Z" fill="white"/>
+                                        </svg>
+                                </div>
+                                <div class="popup__inputs">
+                                    <input class="fullname" type="text" required placeholder="Полное имя">
+                                    <input class="fullname" type="email" required placeholder="email">
+                                    <div class="button"> <input class="bt1" type="submit" value="Заказать"></div>
+                                </div>
+                            </div>
+                           
+                        </div>
                     </div>
                 </div>
             </div>
@@ -311,7 +329,7 @@
                                 </a>
                             </td>
                             <td class="film__cards-center">
-                                <!-- <a href="https://www.kinopoisk.ru/film/1188248/" class="film__img"
+                                <a href="https://www.kinopoisk.ru/film/1188248/" class="film__img"
                                     title="кинопоиск / Калашников" target="_blank">
                                     <img src="img/005.png" alt="Калашников">
                                     <div class="film__p">
@@ -326,7 +344,7 @@
                                             etiam non quam. Ut pharetra sit
                                             amet aliquam id diam maecenas.</p>
                                     </div>
-                                </a> -->
+                                </a>
                             </td>
                             <td>
                                 <a href="https://www.kinopoisk.ru/film/601933/" class="film__img"
@@ -419,21 +437,21 @@
                     quam.</div>
                 <div class="card__box">
                     <div class="card">
-                        <img class="card__img" src="img/Coca-cola.png" alt="Coca-cola">
+                        <img class="card__img" src="img/t1.png" alt="Coca-cola">
                         <div class="card__hover">
                             <div class="card__hover-bacground"></div>
                             <p class="card__hover-text">Coca-cola</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card__img" src="img/Coca-cola2.png" alt="Брелок Железный человек">
+                        <img class="card__img" src="img/t2.png" alt="Брелок Железный человек">
                         <div class="card__hover">
                             <div class="card__hover-bacground"></div>
                             <p class="card__hover-text">Брелок “Железный человек”</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card__img" src="img/Coca-cola3.png" alt="Постер Мстители">
+                        <img class="card__img" src="img/t3.png" alt="Постер Мстители">
                         <div class="card__hover">
                             <div class="card__hover-bacground"></div>
                             <p class="card__hover-text">Постеp “Мстители”</p>
@@ -533,11 +551,12 @@
                 </select>
 
                 <input class="fullname2" type="text" required placeholder="Напишите свой отзыв">
+                <br>
                 <div> <input class="chekbox1" type="checkbox" id="mmm">
                     <label for="mmm">Обработка персональных данных</label>
                 </div>
                 <br>
-                <p><input type="file" name="pic"></p>
+                <!-- <p><input type="file" name="pic"></p> -->
                 <div class="button"> <input class="bt1" type="submit" value="Заказать"></div>
                 <!-- <button type="submit">Заказать</button> -->
             </form>
