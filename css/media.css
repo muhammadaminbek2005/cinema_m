@@ -10,11 +10,8 @@
 }
 @media screen and (max-width:1950px) {
     .container {
-<<<<<<< HEAD
         max-width: 1750px;
-=======
         max-width: 1600px;
->>>>>>> a36dbce38768d6712962c7b6d0779f86c1d83f50
     }
 
     html {
@@ -178,7 +175,7 @@
     }
 
     .film__scroll {
-        overflow-y: scroll;
+        overflow: auto;
     }
 
 

@@ -632,7 +632,7 @@ body {
 }
 
 .card__hover-bacground {
-    background: rgba(163, 204, 64, 0.8);
+    background: #a3cc40cc;
     position: absolute;
     bottom: -5.625rem;
     top: 0;
