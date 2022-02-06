@@ -96,7 +96,7 @@ body {
 }
 
 .header__navigation :hover a {
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     color: #A3CC40;
     transition: 0.7s;
     width: 6.937rem;
@@ -150,7 +150,7 @@ body {
 
 
 .box {
-    margin: 8rem 0 0 0;
+    margin: 4rem 0 0 0;
 }
 
 .box>h1 {
