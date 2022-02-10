@@ -3,7 +3,7 @@ html {
 }
 
 header {
-    background: url(/img/Backgrooundcinema.png) no-repeat center/cover;
+    background: url(./img/Backgrooundcinema.png) no-repeat center/cover;
     max-width: 100%;
     height: 100vh;
     /* clip-path: polygon(0% 0%, 100% 0%, 100% 78%, 0% 96%); */
